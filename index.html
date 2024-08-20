@@ -7,30 +7,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #0c0c0c;
             border: 10px;
-            background-image: url("https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
+
         }
-
-
-        header {
-            background-color: #333;
-            color: #fff;
-        }
-
-
-    .about-me  {
-        text-align: center;
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 120px auto;
-        background-color: rgba(0,0,0, 0.85);
-        width: 900px;
-        border-radius: 15px;
-        color: wheat;
-    }
 
     .content {
         text-align: center;
@@ -53,7 +33,7 @@
     .top-right-button {
             position: fixed;
             top: 20px;
-            right: 50px;
+            right: 80px;
             padding: 20px 30px;
             background-color: #2e2d2d;  
             color: #ffffff;
@@ -65,6 +45,24 @@
     .top-right-button:hover {
         background-color: rgb(4, 43, 1);
             color: #fcfcfc;
+    }
+
+    .top-button2{
+        position: fixed;
+        top: 20px;
+        right: 220px;
+        padding: 20px 30px;
+        background-color: #2e2d2d;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .top-button2:hover{
+        background-color: rgb(4, 43, 1);
+        color: #fff;
     }
 
     .dark-button{
@@ -87,76 +85,166 @@
 
 
     .welcome{
-        color: rgb(255, 255, 255);
+        color: green;
         text-align: center;
         margin: 550px auto;
-        padding: 10px;
-        background-color: rgba(0,0,0, 0.84);
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.84);
         top: 50%;
         left: 50%;
         right: 50%;
         width: 450px;
         border-radius: 13px;
+        font: bold;
 
     }
+
+    .about-me  {
+        text-align: left;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 250px;
+        background-color: rgba(0,0,0, 0.85);
+        width: 900px;
+        border-radius: 15px;
+        height: 500px;
+        color: wheat;
+        right: 23%;
+        top: 100%;
+        position: absolute;
+    }
+
+    .contact{
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 250px;
+        position: absolute;
+        background-color: rgba(0,0,0, 0.85);
+        width: 250px;
+        border-radius: 15px;
+        color: wheat;
+        top: 100%;
+        left: 14%;
+        
+    }
+    
+    ul {
+        list-style: none;
+        text-align: left;
+        
+    }
+
+    .links {
+        cursor: pointer;
+        color: wheat;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        text-decoration: none;
+    }
+
+    .backgroundimage{
+        background-image: url("https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .top-image{
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background: url('https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg') no-repeat center center/cover;
+        overflow: hidden;
+    }
+    
+    .bottom-image{
+        position: absolute;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background: url('https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg') no-repeat center center/cover ;
+        overflow: hidden;
+        filter: blur(3px);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .project{
+        position: absolute;
+        width: 500px;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 250px;
+        left: 30%;
+        background-color: rgba(255, 255, 255, 0.65);
+        top: 150%;
+        color: #000000;
+        text -moz-animation: ;
+    }
+
 
 </style>
 
 <header>
-    
 </header>
 
+
+
+
 <!-- Välkomst meddeladne -->
-<div class="welcome">
+<div class="top-image">
+    <div class="welcome">
+        <h1>Welcome To My Portfolio</h1>
+    </div>
 
-    <h1>Welcome To My Portfolio</h1>
+    <br><br>
 
-</div>
+    <!-- Buttons -->
+    <button class="top-right-button" onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });">
+        Om Mig
+    </button>
 
-<br><br>
+    <button class="top-button2" onclick="document.getElementById('project').scrollIntoView({ behavior: 'smooth' })";>
+        Projekt
+    </button>
 
-<!-- Buttons -->
-<button class="top-right-button" onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });">
-    Om Mig
-</button>
-
-<button class="dark-button">
-    Dark/Light
-</button>
-<!-- ^ -->
-
-
-
-
-
-<div>
-    
+    <button class="dark-button">
+        Dark/Light
+    </button>
+    <!-- ^ -->
 </div>
 
 
+<!--Kontakt information-->
 
+<div class="bottom-image"></div>
 
-
-
+    <div class="contact" id="about-me">
+        <img src="data:image/png;base64,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">
+            <h3>Kontakt Information</h3>
+                <ul class="links">
+                    <h3>
+                        <li><a class="links" href="#">LinkedIn</a></li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li><a class="links" href="https://github.com/KevinPersson00?tab=repositories" target="_blank">Github</a></li>
+                    </h3>
+                </ul>
+        
+    </div>
 
 <!-- Om mig delen -->
-<div class="about-me">
-<h1>Om mig</h1>
-<a>Mitt Namn är kevin</a>
-</div>
 
+    <div class="about-me" >
+        <h1>Om Mig</h1>
+            <a>Mitt namn är Kevin Persson. Jag är en 4:de års elev på Te4.</a>
+    </div>
 
-
-
-
-<!-- Projekt delen -->
-<div class="project">
-
-</div>
-
-
-
-
+    <!-- Projekt delen -->
+    <div class="project" id="project">
+        <h1>Mina Projekt<h1>
+    </div>
+ 
 
 
 
