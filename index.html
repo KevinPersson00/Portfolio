@@ -9,13 +9,15 @@
             padding: 0;
             background-color: #f4f4f4;
             border: 10px;
+            background-image: url("https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
+
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
-            text-align: center;
         }
 
 
@@ -23,27 +25,16 @@
         text-align: center;
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        margin: 20px auto;
-        background-color: #f1bbdf;
-        width: 500px;
+        margin: 120px auto;
+        background-color: rgba(0,0,0, 0.85);
+        width: 900px;
+        border-radius: 15px;
+        color: wheat;
     }
 
     .content {
         text-align: center;
             margin: 20px;
-    }
-
-    .top-right-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 20px 30px;
-            background-color: #141111;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
     }
 
     .button{
@@ -58,25 +49,82 @@
             cursor: pointer;
             font-size: 16px;
     }
-    
-    .about-me-button:hover {
-        background-color: rgb(255, 255, 255);
-            color: #000000;
+
+    .top-right-button {
+            position: fixed;
+            top: 20px;
+            right: 50px;
+            padding: 20px 30px;
+            background-color: #2e2d2d;  
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+    }
+    .top-right-button:hover {
+        background-color: rgb(4, 43, 1);
+            color: #fcfcfc;
     }
 
+    .dark-button{
+        top: 20px;
+        left: 20px;
+        padding: 20px 30px;
+        background-color: #aaacab;
+        border: none;
+        cursor: pointer;
+        color: #000000;
+        position: absolute;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .dark-button:hover{
+        background-color: black;
+        color: aqua;
+    }
+
+
+    .welcome{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 550px auto;
+        padding: 10px;
+        background-color: rgba(0,0,0, 0.84);
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        width: 450px;
+        border-radius: 13px;
+
+    }
 
 </style>
 
 <header>
-    <h1>Min Portfolio</h1>
-    <a href"#"></a>
-    <a href"#"></a>
+    
 </header>
 
+<!-- Välkomst meddeladne -->
+<div class="welcome">
 
+    <h1>Welcome To My Portfolio</h1>
+
+</div>
+
+<br><br>
+
+<!-- Buttons -->
 <button class="top-right-button" onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });">
     Om Mig
 </button>
+
+<button class="dark-button">
+    Dark/Light
+</button>
+<!-- ^ -->
+
 
 
 
@@ -86,16 +134,23 @@
 </div>
 
 
-<div class="content">
-    <h1>Välkommen till min Portfolio</h1>
-    <p>Mitt Namn är Kevin Persson</p>
+
+
+
+
+
+<!-- Om mig delen -->
+<div class="about-me">
+<h1>Om mig</h1>
+<a>Mitt Namn är kevin</a>
 </div>
 
 
-<div class="about-me">
 
-<h1>Om mig</h1>
-<a>Mitt Namn är kevin</a>
+
+
+<!-- Projekt delen -->
+<div class="project">
 
 </div>
 
