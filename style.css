@@ -1,177 +1,21 @@
+function myFunction(){
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
+
+.dark-mode{
+  background-color: #000000;
+  color: #042b01;
+}
+
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0c0c0c;
+  background-color: #da0000;
   border: 10px;
 }
-
-header {
-  background-color: #333;
-  color: #fff;
-}
-
-.content {
-  text-align: center;
-  margin: 20px;
-}
-
-.button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 20px 30px;
-  background-color: #04aa6d;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.top-right-button {
-  position: fixed;
-  top: 20px;
-  right: 80px;
-  padding: 20px 30px;
-  background-color: #2e2d2d;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-.top-right-button:hover {
-  background-color: rgb(4, 43, 1);
-  color: #fcfcfc;
-}
-
-.top-button2 {
-  position: fixed;
-  top: 20px;
-  right: 220px;
-  padding: 20px 30px;
-  background-color: #2e2d2d;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.top-button2:hover {
-  background-color: rgb(4, 43, 1);
-  color: #fff;
-}
-
-.dark-button {
-  top: 20px;
-  left: 20px;
-  padding: 20px 30px;
-  background-color: #aaacab;
-  border: none;
-  cursor: pointer;
-  color: #000000;
-  position: absolute;
-  border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.dark-button:hover {
-  background-color: black;
-  color: aqua;
-}
-
-.welcome {
-  color: green;
-  text-align: center;
-  margin: 550px auto;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.84);
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  width: 450px;
-  border-radius: 13px;
-}
-
-.about-me {
-  text-align: left;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 250px auto;
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 900px;
-  border-radius: 15px;
-  height: 500px;
-  color: wheat;
-  right: auto;
-}
-
-.contact {
-  text-align: center;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 250px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 250px;
-  border-radius: 15px;
-  color: wheat;
-  top: 0.2%;
-  left: 14%;
-}
-
-ul {
-  list-style: none;
-  text-align: left;
-}
-
-.links {
-  cursor: pointer;
-  color: wheat;
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
-  text-decoration: none;
-}
-
-.backgroundimage {
-  background-image: url("https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project {
-  left: 50%;
-  width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-  margin: 250px;
-}
-
-.top-image {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  background: url("https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg")
-    no-repeat center center/cover;
-  overflow: hidden;
-}
-
-.bottom-image {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
-  filter: blur(8px);
-}
-.bottom-image > div:nth-child(1) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    background: url("https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg")
-    no-repeat center center/cover;
-    filter: blur(8px);
-    width: 100%;
-    height: 100%;
-  }

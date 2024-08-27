@@ -12,7 +12,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0c0c0c;
+            background-color: #ffffff;
             border: 10px;
         }
 
@@ -85,15 +85,16 @@
     }
     .up-button{
         top: 90%;
-        padding: 20px 30px;
+        padding: 30px 40px;
         background-color: #2e2d2d;
         border: none;
         color: #ffffff;
         position: absolute;
         border-radius: 20px;
-        top: 195%;
+        top: 193%;
         right: 50%;
         cursor: pointer;
+        font-size: 17px;
     }
 
     .up-button:hover{
@@ -108,11 +109,11 @@
 
 
     .welcome{
-        color: #005700;
+        color: wheat;
         text-align: center;
         margin: 550px auto;
         padding: 50px;
-        background-color: rgba(255, 255, 255, 0.84);
+        background-color: rgba(39, 39, 39, 0.84);
         top: 50%;
         left: 50%;
         right: 50%;
@@ -130,7 +131,7 @@
 
     .links {
         cursor: pointer;
-        color: #005700;
+        color: wheat;
         font-family: Arial, Helvetica, sans-serif;
         border: none;
         text-decoration: none;
@@ -141,11 +142,11 @@
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 250px;
-        background-color: rgba(255, 255, 255, 0.65);
+        background-color: rgba(0, 0, 0, 0.65);
         width: 900px;
         border-radius: 15px;
         height: 500px;
-        color: #005700;
+        color: wheat;
         right: 23%;
         top: 100%;
         position: absolute;
@@ -157,11 +158,11 @@
         font-family: Arial, Helvetica, sans-serif;
         margin: 250px;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.65);
+        background-color: rgba(0, 0, 0, 0.65);
         width: 250px;
         height: 480px;
         border-radius: 15px;
-        color: #005700;
+        color: wheat;
         top: 100%;
         left: 14%;
         
@@ -178,7 +179,7 @@
         position: relative;
         width: 100%;
         height: 100vh; /* Full viewport height */
-        background: url('https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg') no-repeat center center/cover;
+        background: url('test1.png') no-repeat center center/cover;
         overflow: hidden;
     }
     
@@ -200,11 +201,15 @@
         border-radius: 15px;
         margin: 250px;
         left: 14%;
-        background-color: rgba(255, 255, 255, 0.65);
+        background-color: rgba(0, 0, 0, 0.65);
         top: 150%;
-        color: #000000;
+        color: wheat;
         text-align: left;
         text-decoration: underline;
+    }
+    .dark-mode{
+    background-color: #000000;
+    color: #042b01;
     }
 
 
@@ -214,11 +219,11 @@
 </header>
 
 
-
+<a id="welcome"></a>
 
 <!-- Välkomst meddeladne -->
 <div class="top-image">
-    <div class="welcome">
+    <div class="welcome" >
         <h1>Welcome To My Portfolio</h1>
     </div>
 
@@ -233,7 +238,7 @@
         Mina Projekt
     </button>
 
-    <button id="colordiv" class="dark-button">
+    <button onclick="myFunction()" class="dark-button">
         Dark/Light
     </button>
     <!-- ^ -->
@@ -272,11 +277,17 @@
     </div>
 
 
-    <button class="up-button">
+    <button class="up-button" onclick="getElementById('welcome').scrollIntoView({behavior: 'smooth'})">
         Gå Upp
     </button>
  
 
+    <script>
+        function myFunction(){
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+    </script>
 
 
 </body>
